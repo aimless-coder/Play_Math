@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --primary: #8f00ff;
+    --secondary: #3a0563;
+    --reset: #700505;
+    --reset-secondary: #2c0404;
+  }
+
+*,
+*::after,
+*::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: "Poppins", sans-serif;
+}
+
+.background{
+    background-image: url(./assets/background.png);
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    place-items: center;
+}
+
+.box{
+    background-color: rgba(240, 240, 240, 0.7);
+    border-width: 0px 2px 1px 0px;
+    border-style: solid;
+    border-color: #fcddec;
+    box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.36);
+    border-radius: 25px;
+    height: 400px;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 50px;
+}
+
+#questionForm{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+
+.score-container h2{
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 48px;
+    color: var(--secondary);
+}
+
+.score-container {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.score-container i{
+    font-size: 32px;
+    color: var(--secondary);
+}
+
+.box h3{
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 54px;
+}
+
+#answerInput{
+    background: transparent;
+    border: 1px solid black;
+    border-radius: 5px;
+    height: 40px;
+    padding: 20px;
+    font-size: 20px;
+}
+
+#answerInput:focus-visible{
+    outline: 1px solid var(--primary);
+    border: 1px solid var(--primary);
+}
+
+.primary-btn{
+    height: 46px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    background: var(--primary);
+    font-size: 28px;
+}
+
+.primary-btn:hover{
+    opacity: 0.8;
+}
+
+.primary-btn:active{
+    background-color: var(--secondary);
+}
+
+.reset-btn{
+    padding: 5px;
+    width: 100%;
+    background-color: var(--reset);
+}
+
+.reset-btn:active{
+    background-color: var(--reset-secondary);
+    color: white;
+}
+
+@media (max-width: 786px) {
+    .box{
+        width: 80%;
+        height: 360px;
+        padding: 20px;
+    }
+
+    .score-container{
+        gap: 20px;
+    }
+
+    .score-container h2{
+        font-size: 28px;
+        line-height: 32px;
+    }
+    
+    .box h3{
+        font-size: 20px;
+        line-height: 40px;
+    }
+
+    .primary-btn{
+        font-size: 20px;
+        height: 36px;
+    }
+}
