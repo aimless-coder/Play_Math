@@ -2,6 +2,8 @@
 
 Play Math is an interactive web-based game designed to enhance your arithmetic skills. It generates random math questions, allowing you to test and improve your basic math operations in a fun and engaging way.
 
+To view this project, visit [here](https://aimless-coder.github.io/Play_Math/)
+
 ## Table of Contents
 
 - [Demo](#demo)
